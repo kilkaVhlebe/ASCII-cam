@@ -13,18 +13,24 @@
             android:layout_height="wrap_content"
             android:id="@+id/selectButton"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="140dp"
+            android:layout_marginStart="136dp"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="664dp"
+            android:layout_marginTop="692dp"
             android:textColor="#000000" />
 
     <TextView
-            android:layout_width="409dp"
-            android:layout_height="647dp"
+            android:layout_width="441dp"
+            android:layout_height="635dp"
             android:id="@+id/textView"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:textAlignment="center"
-            android:textSize="8sp" />
+            android:textSize="2sp"
+            android:textColor="@color/white"
+            android:rotationX="0"
+            android:rotationY="0"
+            android:rotation="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center" />
 </androidx.constraintlayout.widget.ConstraintLayout>

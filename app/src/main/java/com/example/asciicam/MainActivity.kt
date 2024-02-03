@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                 val imageConverter = ImageConverter()
 
                 if (bitmap != null) {
-                    val resizeBitmap: Bitmap = Bitmap.createScaledBitmap(bitmap, 50, 50, false)
+                    val resizeBitmap: Bitmap = Bitmap.createScaledBitmap(bitmap, 50, 110, false)
                     val grayscaleBitmap: Bitmap = imageConverter.setGrayscaleBitmap(resizeBitmap)
                     val asciiArt: Array<Array<String>> = imageConverter.convertToASCII(grayscaleBitmap)
                     for (row in asciiArt) {

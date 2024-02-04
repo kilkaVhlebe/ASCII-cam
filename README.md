@@ -1,12 +1,14 @@
-#ASCII art converter project
+# ASCII art converter project
 ##Description
 It's my test project for my college and training ASCII converting for my future project.
-##Installation
-```git clone https://github.com/tugaserya/ASCII-cam.git```
+## Installation
+```
+git clone https://github.com/tugaserya/ASCII-cam.git
+```
 Waiting for build.
-##Running the app
+## Running the app
 I developing this app on Android Studio, so i just use emulator and my own phone.
-##Code explanation
+## Code explanation
 Here I will describe only the mechanism for converting an image to ASCII art and a few related things.
 The original image is scaled across the phone screen to values suitable for display (the divisors are selected by enumerating the values):
 ```
@@ -66,7 +68,7 @@ fun convertToASCII(bitmap: Bitmap): Array<Array<String>> {
     }
 ```
 This is actually all the magic.
-#P.S
+# P.S
 I know that there are other more complex methods, but they are not suitable for my tasks in the future.
 If you have a new ideas how to improve this project, i would like to see your ideas.
 

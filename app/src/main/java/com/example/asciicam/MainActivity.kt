@@ -5,10 +5,12 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
+import android.util.DisplayMetrics
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,7 +39,11 @@ class MainActivity : AppCompatActivity() {
                 val imageConverter = ImageConverter()
 
                 if (bitmap != null) {
-                    val resizeBitmap: Bitmap = Bitmap.createScaledBitmap(bitmap, 50, 110, false)
+                    val displayMetrics = DisplayMetrics()
+                    windowManager.defaultDisplay.getMetrics(displayMetrics)
+                    val height = displayMetrics.heightPixels
+                    val width = displayMetrics.widthPixels
+                    val resizeBitmap: Bitmap = Bitmap.createScaledBitmap(bitmap, width/20, height/17, false)
                     val grayscaleBitmap: Bitmap = imageConverter.setGrayscaleBitmap(resizeBitmap)
                     val asciiArt: Array<Array<String>> = imageConverter.convertToASCII(grayscaleBitmap)
                     for (row in asciiArt) {

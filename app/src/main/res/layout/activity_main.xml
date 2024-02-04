@@ -33,4 +33,17 @@
             app:layout_constraintHorizontal_bias="0.498"
             android:textAlignment="center"
             android:layout_marginTop="20dp" />
+
+    <TextView
+            android:text="The resulting image may be wrong scaled or rotated. If you converting image from your phone camera, you should rotate it horizontal."
+            android:layout_width="167dp"
+            android:layout_height="116dp"
+            android:id="@+id/textView2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="126dp"
+            android:layout_marginEnd="126dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textAlignment="center"
+            android:layout_marginBottom="59dp"
+            app:layout_constraintBottom_toTopOf="@+id/selectButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
